@@ -3,7 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java
  * to edit this template
  */
-package Version1;
+
+import Version1.BasePlusCommissionEmployee;
+import Version1.CommissionEmployee;
+import Version1.HourlyEmployee;
+import Version1.PieceWorkerEmployee;
+
+import Version2.Name;
+import Version2.MyDate;
 
 /**
  *
@@ -113,5 +120,27 @@ public class Main {
 
         System.out.println(base1);
         System.out.println(base2);
+
+        Version2.HourlyEmployee hourlyV2_2 =
+                new Version2.HourlyEmployee(
+                        502,
+                        name2,
+                        40,
+                        250,
+                        dateHired2,
+                        birthDate2
+                );
+
+        System.out.println("[displayHourlyEmployee()]");
+
+        hourlyV2_1.displayHourlyEmployee();
+        hourlyV2_2.displayHourlyEmployee();
+
+        System.out.println();
+
+        System.out.println("[toString()]");
+
+        System.out.println(hourlyV2_1);
+        System.out.println(hourlyV2_2);
     }
 }
